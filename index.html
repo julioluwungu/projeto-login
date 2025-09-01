@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;FILL@1" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
-        <section id="imagem">
-            <img src="imagens/imagem.jpg" alt="Fundo">
-        </section>
+        <section id="imagem"></section>
         <section id="conteudo">
             <h1>Login</h1>
             <p>
@@ -23,14 +19,14 @@
             <form action="#" method="post">
                 <div class="conteiner">
                     <label for="email"><span class="material-symbols-outlined">person</span></label>
-                    <input type="email" name="email" id="email" placeholder="seu e-mail">
+                    <input type="email" name="email" id="email" minlength="10" maxlength="30" required placeholder="seu e-mail">
                 </div>
                 <div class="conteiner">
                     <label for="senha"><span class="material-symbols-outlined">key</span></label>
-                    <input type="password" name="senha" id="senha" placeholder="sua senha">
+                    <input type="password" name="senha" id="senha" minlength="8" maxlength="20" required placeholder="sua senha">
                 </div>
                 <div id="entrar" class=" conteiner botao"><input type="submit" value="Entrar"></div>
-                <div id="esquecer" class="conteiner botao"><input type="submit" value="Esqueci a senha"></div>
+                <div id="esquecer" class="conteiner botao"><input type="submit" value="Esqueci a senha &#9993;"></div>
             </form>
         </section>
     </main>

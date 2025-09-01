@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+@media screen and (min-width: 769px) {
+
+    body {
+        background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    }
+
+    main {
+        display: flex;
+        width: 80vw;
+        height: 300px;
+    }
+
+    section#imagem {
+        width: 30%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    section#conteudo {
+        width: 70%;
+        height: 100%;
+    }
+}
